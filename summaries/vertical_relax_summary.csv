@@ -1,0 +1,17 @@
+tau,status,selected_file,final_energy_Ry,final_total_force_Ry_Bohr,frames,alternative_runs
+tau00,CONVERGED,sto_bi_tau00.vertical_relax.out,-1139.2822442,0.001398,1,sto_bi_tau00.vertical_relax_8h.out
+tau01,CONVERGED,sto_bi_tau01.vertical_relax.out,-1139.26676067,0.001139,12,sto_bi_tau01.vertical_relax_8h.out
+tau02,CONVERGED,sto_bi_tau02.vertical_relax_8h.out,-1139.23241212,0.001448,16,sto_bi_tau02.vertical_relax.out
+tau03,CONVERGED,sto_bi_tau03.vertical_relax.out,-1139.20481975,0.001119,17,sto_bi_tau03.vertical_relax_8h.out
+tau04,CONVERGED,sto_bi_tau04.vertical_relax.out,-1139.1919113,0.000679,18,sto_bi_tau04.vertical_relax_8h.out
+tau05,CONVERGED,sto_bi_tau05.vertical_relax.out,-1139.18842211,0.000682,18,sto_bi_tau05.vertical_relax_8h.out
+tau06,CONVERGED,sto_bi_tau06.vertical_relax.out,-1139.19190883,0.000674,18,sto_bi_tau06.vertical_relax_8h.out
+tau07,CONVERGED,sto_bi_tau07.vertical_relax.out,-1139.20481369,0.001128,17,sto_bi_tau07.vertical_relax_8h.out
+tau08,CONVERGED,sto_bi_tau08.vertical_relax.out,-1139.23240436,0.001461,16,
+tau09,CONVERGED,sto_bi_tau09.vertical_relax.out,-1139.26675683,0.001135,12,
+tau10,CONVERGED,sto_bi_tau10.vertical_relax.out,-1139.26675735,0.001131,12,
+tau11,CONVERGED,sto_bi_tau11.vertical_relax.out,-1139.25294582,0.001526,12,
+tau12,CONVERGED,sto_bi_tau12.vertical_relax.out,-1139.22291269,0.001899,16,
+tau13,CONVERGED,sto_bi_tau13.vertical_relax.out,-1139.19947539,0.000711,18,
+tau14,CONVERGED,sto_bi_tau14.vertical_relax.out,-1139.18857139,0.001095,18,
+tau15,CONVERGED,sto_bi_tau15.vertical_relax.out,-1139.18562103,0.001048,18,

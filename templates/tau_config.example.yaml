@@ -1,0 +1,83 @@
+# ============================================================
+# Tau-Data-Track example configuration
+# ============================================================
+#
+# Copy this file and edit the paths/resources for your system.
+#
+# Example:
+#   cp templates/tau_config.example.yaml tau_config.yaml
+#
+# Machine-specific values should NOT be hard-coded into the
+# reusable Python workflow.
+
+system:
+  name: SrTiO3_bilayer
+
+paths:
+  calculation_root: /path/to/tau/calculations
+  pseudo_dir: /path/to/pseudopotentials
+
+tau_grid:
+  nx: 10
+  ny: 10
+
+qe:
+  executable: pw.x
+
+  input_dft: PBE
+  vdw_corr: grimme-d3
+
+  ecutwfc: 80
+  ecutrho: 340
+
+  occupations: fixed
+  assume_isolated: 2D
+
+  nosym: true
+  noinv: true
+
+  conv_thr: 1.0e-8
+  mixing_beta: 0.1
+  electron_maxstep: 700
+  diagonalization: david
+
+  kmesh:
+    - 8
+    - 8
+    - 1
+
+vertical_relax:
+  calculation: relax
+
+  etot_conv_thr: 1.0e-4
+  forc_conv_thr: 1.0e-3
+
+  # Example value for an ~8 h execution window.
+  max_seconds: 27000
+
+  ion_dynamics: bfgs
+
+  # Stage-B constraint:
+  # x fixed, y fixed, z free
+  atomic_constraint:
+    - 0
+    - 0
+    - 1
+
+slurm:
+  account: YOUR_PROJECT
+  qos: regular
+  constraint: cpu
+
+  nodes: 1
+  ntasks_per_node: 128
+  cpus_per_task: 1
+
+  walltime: "08:00:00"
+
+  # Change this to the QE module available on your machine.
+  qe_module: YOUR_QE_MODULE
+
+parallel:
+  calculations_per_node: 8
+  mpi_ranks_per_calculation: 16

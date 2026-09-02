@@ -1,0 +1,2 @@
+tau,global_step,source_frame_index,source_file,energy_eV_ASE,energy_Ry_QE,energy_eV_QE,qe_total_force_Ry_Bohr,qe_total_force_eV_A,max_atomic_force_eV_A,rms_atomic_force_eV_A,stress_xx_eV_A3,stress_yy_eV_A3,stress_zz_eV_A3,stress_yz_eV_A3,stress_xz_eV_A3,stress_xy_eV_A3,max_step_displacement_A,rms_step_displacement_A
+tau00,0,0,sto_bi_tau00.vertical_relax.out,-15500.723239074105,-1139.2822442,-15500.724595061109,0.001398,0.03594402516595179,0.0218341700755811,0.011373709257224966,0.009251356130749675,0.008968563585268244,0.00022127598526306785,0.0,-0.0,-0.0,,

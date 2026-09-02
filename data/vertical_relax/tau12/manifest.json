@@ -1,0 +1,28 @@
+{
+  "tau": "tau12",
+  "source_output": "/pscratch/sd/a/anita14b/SAM/STO/bilayer/twist/grid/10x10/tau12/sto_bi_tau12.vertical_relax.out",
+  "ase_frames_parsed": 16,
+  "unique_frames_written": 16,
+  "qe_energy_count": 16,
+  "qe_total_force_count": 16,
+  "alignment_ok": true,
+  "scf_convergence_messages": 16,
+  "bfgs_converged": true,
+  "end_bfgs": true,
+  "job_done": true,
+  "maximum_cpu_time_exceeded": false,
+  "final_energy_Ry": -1139.22291269,
+  "final_qe_total_force_Ry_Bohr": 0.001899,
+  "files": {
+    "trajectory_extxyz": "trajectory.extxyz",
+    "trajectory_traj": "trajectory.traj",
+    "steps_csv": "steps.csv",
+    "atomic_forces_csv": "atomic_forces.csv",
+    "final_structure_vasp": "final_structure.vasp"
+  },
+  "branch_selection": {
+    "selected": "sto_bi_tau12.vertical_relax.out",
+    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS preferred; then completed execution; then more evaluated frames; then lower final QE total force.",
+    "alternatives": []
+  }
+}
