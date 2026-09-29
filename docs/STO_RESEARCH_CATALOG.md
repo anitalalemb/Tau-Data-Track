@@ -44,6 +44,19 @@ cannot be confused with another moiré cell.
 
 ## Audit before selection
 
+Copy an additional calculation family from NERSC with:
+
+```bash
+scripts/archive/copy_nersc_family_to_mounted_nas.sh \
+  /pscratch/sd/a/anita14b/SAM/STO/PATH_TO_FAMILY \
+  bilayer/commensurate \
+  2026-09-29_commensurate_v1
+```
+
+Review the dry-run file list, then append `--apply`. Use `bulk`, `monolayer`,
+`bilayer/untwisted`, or `bilayer/commensurate` as the NAS family, according to
+the calculation source.
+
 After copying a material family to the NAS, run:
 
 ```bash
