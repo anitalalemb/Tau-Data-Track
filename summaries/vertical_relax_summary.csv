@@ -15,3 +15,87 @@ tau12,CONVERGED,sto_bi_tau12.vertical_relax.out,-1139.22291269,0.001899,16,
 tau13,CONVERGED,sto_bi_tau13.vertical_relax.out,-1139.19947539,0.000711,18,
 tau14,CONVERGED,sto_bi_tau14.vertical_relax.out,-1139.18857139,0.001095,18,
 tau15,CONVERGED,sto_bi_tau15.vertical_relax.out,-1139.18562103,0.001048,18,
+tau16,CONVERGED,sto_bi_tau16.vertical_relax_8h.out,-1139.18856946,0.001087,18,
+tau17,CONVERGED,sto_bi_tau17.vertical_relax_8h.out,-1139.19947031,0.000703,18,
+tau18,CONVERGED,sto_bi_tau18.vertical_relax_8h.out,-1139.22290523,0.001932,16,
+tau19,CONVERGED,sto_bi_tau19.vertical_relax_8h.out,-1139.25294134,0.00154,12,
+tau20,CONVERGED,sto_bi_tau20.vertical_relax_8h.out,-1139.23240595,0.001529,16,
+tau21,CONVERGED,sto_bi_tau21.vertical_relax_8h.out,-1139.22290862,0.002018,16,
+tau22,CONVERGED,sto_bi_tau22.vertical_relax_8h.out,-1139.20338148,0.001218,15,
+tau23,CONVERGED,sto_bi_tau23.vertical_relax_8h.out,-1139.18886293,0.001366,18,
+tau24,CONVERGED,sto_bi_tau24.vertical_relax_8h.out,-1139.181983,0.001173,19,
+tau25,CONVERGED,sto_bi_tau25.vertical_relax_restart1.out,-1139.18001048,0.001609,20,sto_bi_tau25.vertical_relax_8h.out
+tau26,CONVERGED,sto_bi_tau26.vertical_relax_restart1.out,-1139.18198096,0.001225,3,sto_bi_tau26.vertical_relax_8h.out
+tau27,CONVERGED,sto_bi_tau27.vertical_relax_8h.out,-1139.1888598,0.001358,18,
+tau28,CONVERGED,sto_bi_tau28.vertical_relax_8h.out,-1139.20337632,0.00122,15,
+tau29,CONVERGED,sto_bi_tau29.vertical_relax_8h.out,-1139.22290416,0.00202,16,
+tau30,CONVERGED,sto_bi_tau30.vertical_relax_8h.out,-1139.20481555,0.001188,17,
+tau31,CONVERGED,sto_bi_tau31.vertical_relax_8h.out,-1139.1994725,0.000764,18,
+tau32,CONVERGED,sto_bi_tau32.vertical_relax_8h.out,-1139.18886176,0.001397,18,
+tau33,CONVERGED,sto_bi_tau33.vertical_relax_restart1.out,-1139.18081909,0.000707,4,sto_bi_tau33.vertical_relax_8h.out
+tau34,CONVERGED,sto_bi_tau34.vertical_relax_restart1.out,-1139.1765744,0.00159,20,sto_bi_tau34.vertical_relax_8h.out
+tau35,CONVERGED,sto_bi_tau35.vertical_relax_restart1.out,-1139.17539079,0.001247,21,sto_bi_tau35.vertical_relax_8h.out
+tau36,CONVERGED,sto_bi_tau36.vertical_relax_restart1.out,-1139.17657402,0.001616,20,sto_bi_tau36.vertical_relax_8h.out
+tau37,CONVERGED,sto_bi_tau37.vertical_relax_8h.out,-1139.18082139,0.001095,17,
+tau38,CONVERGED,sto_bi_tau38.vertical_relax_8h.out,-1139.18885912,0.001384,18,
+tau39,CONVERGED,sto_bi_tau39.vertical_relax_8h.out,-1139.19946983,0.000764,18,
+tau40,CONVERGED,sto_bi_tau40.vertical_relax_8h.out,-1139.19190998,0.000702,18,
+tau41,CONVERGED,sto_bi_tau41.vertical_relax_8h.out,-1139.18857029,0.001116,18,
+tau42,CONVERGED,sto_bi_tau42.vertical_relax_restart1.out,-1139.18195737,0.001081,5,sto_bi_tau42.vertical_relax_8h.out
+tau43,CONVERGED,sto_bi_tau43.vertical_relax_restart2.out,-1139.17657558,0.001255,17,sto_bi_tau43.vertical_relax_8h.out; sto_bi_tau43.vertical_relax_restart1.out
+tau44,CONVERGED,sto_bi_tau44.vertical_relax_restart3.out,-1139.17373988,0.001715,6,sto_bi_tau44.vertical_relax_8h.out; sto_bi_tau44.vertical_relax_restart1.out; sto_bi_tau44.vertical_relax_restart2.out
+tau45,CONVERGED,sto_bi_tau45.vertical_relax_restart2.out,-1139.17310171,0.001817,18,sto_bi_tau45.vertical_relax_8h.out; sto_bi_tau45.vertical_relax_restart1.out
+tau46,CONVERGED,sto_bi_tau46.vertical_relax_restart1.out,-1139.17384283,0.001095,21,sto_bi_tau46.vertical_relax_8h.out
+tau47,CONVERGED,sto_bi_tau47.vertical_relax_restart2.out,-1139.17657083,0.001484,16,sto_bi_tau47.vertical_relax_8h.out; sto_bi_tau47.vertical_relax_restart1.out
+tau48,CONVERGED,sto_bi_tau48.vertical_relax_restart1.out,-1139.18198549,0.00081,20,sto_bi_tau48.vertical_relax_8h.out
+tau49,CONVERGED,sto_bi_tau49.vertical_relax_8h.out,-1139.18856905,0.001097,18,
+tau50,CONVERGED,sto_bi_tau50.vertical_relax_restart1.out,-1139.1884081,0.001315,4,sto_bi_tau50.vertical_relax_8h.out
+tau51,CONVERGED,sto_bi_tau51.vertical_relax_8h.out,-1139.18562064,0.001079,18,
+tau52,CONVERGED,sto_bi_tau52.vertical_relax_restart1.out,-1139.18001442,0.000731,20,sto_bi_tau52.vertical_relax_8h.out
+tau53,CONVERGED,sto_bi_tau53.vertical_relax_restart2.out,-1139.17539324,0.000623,20,sto_bi_tau53.vertical_relax_8h.out; sto_bi_tau53.vertical_relax_restart1.out
+tau54,CONVERGED,sto_bi_tau54.vertical_relax_restart2.out,-1139.17310478,0.001663,19,sto_bi_tau54.vertical_relax_8h.out; sto_bi_tau54.vertical_relax_restart1.out
+tau55,CONVERGED,sto_bi_tau55.vertical_relax_restart3.out,-1139.17248801,0.001356,23,sto_bi_tau55.vertical_relax_8h.out; sto_bi_tau55.vertical_relax_restart1.out; sto_bi_tau55.vertical_relax_restart2.out; sto_bi_tau55.vertical_relax_tight.out
+tau56,CONVERGED,sto_bi_tau56.vertical_relax_restart3.out,-1139.17310186,0.001807,1,sto_bi_tau56.vertical_relax_8h.out; sto_bi_tau56.vertical_relax_restart1.out; sto_bi_tau56.vertical_relax_restart2.out
+tau57,CONVERGED,sto_bi_tau57.vertical_relax_restart2.out,-1139.17538765,0.001273,19,sto_bi_tau57.vertical_relax_8h.out; sto_bi_tau57.vertical_relax_restart1.out
+tau58,CONVERGED,sto_bi_tau58.vertical_relax_restart1.out,-1139.18001193,0.000999,20,sto_bi_tau58.vertical_relax_8h.out
+tau59,CONVERGED,sto_bi_tau59.vertical_relax_8h.out,-1139.18561988,0.001058,18,
+tau60,CONVERGED,sto_bi_tau60.vertical_relax_8h.out,-1139.19190974,0.000694,18,
+tau61,CONVERGED,sto_bi_tau61.vertical_relax_8h.out,-1139.18857047,0.001084,18,
+tau62,CONVERGED,sto_bi_tau62.vertical_relax_restart1.out,-1139.18195668,0.001073,5,sto_bi_tau62.vertical_relax_8h.out
+tau63,CONVERGED,sto_bi_tau63.vertical_relax_restart1.out,-1139.17657689,0.001146,20,sto_bi_tau63.vertical_relax_8h.out
+tau64,CONVERGED,sto_bi_tau64.vertical_relax_restart2.out,-1139.17384382,0.001,24,sto_bi_tau64.vertical_relax_8h.out; sto_bi_tau64.vertical_relax_restart1.out
+tau65,CONVERGED,sto_bi_tau65.vertical_relax_restart2.out,-1139.17310301,0.001695,18,sto_bi_tau65.vertical_relax_8h.out; sto_bi_tau65.vertical_relax_restart1.out
+tau66,CONVERGED,sto_bi_tau66.vertical_relax_restart1.out,-1139.17384389,0.001043,21,sto_bi_tau66.vertical_relax_8h.out
+tau67,CONVERGED,sto_bi_tau67.vertical_relax_restart2.out,-1139.17657489,0.001144,16,sto_bi_tau67.vertical_relax_8h.out; sto_bi_tau67.vertical_relax_restart1.out
+tau68,CONVERGED,sto_bi_tau68.vertical_relax_restart1.out,-1139.18181722,0.001688,8,sto_bi_tau68.vertical_relax_8h.out
+tau69,CONVERGED,sto_bi_tau69.vertical_relax_restart1.out,-1139.18856401,0.001335,4,sto_bi_tau69.vertical_relax_8h.out
+tau70,CONVERGED,sto_bi_tau70.vertical_relax_8h.out,-1139.20481651,0.001181,17,
+tau71,CONVERGED,sto_bi_tau71.vertical_relax_8h.out,-1139.19947245,0.000762,18,
+tau72,CONVERGED,sto_bi_tau72.vertical_relax_restart1.out,-1139.18886296,0.001079,4,sto_bi_tau72.vertical_relax_8h.out
+tau73,CONVERGED,sto_bi_tau73.vertical_relax_8h.out,-1139.18082158,0.001114,17,
+tau74,CONVERGED,sto_bi_tau74.vertical_relax_restart1.out,-1139.17657362,0.001553,20,sto_bi_tau74.vertical_relax_8h.out
+tau75,CONVERGED,sto_bi_tau75.vertical_relax_restart1.out,-1139.17539013,0.001155,21,sto_bi_tau75.vertical_relax_8h.out
+tau76,CONVERGED,sto_bi_tau76.vertical_relax_restart1.out,-1139.17657268,0.001587,20,sto_bi_tau76.vertical_relax_8h.out
+tau77,CONVERGED,sto_bi_tau77.vertical_relax_8h.out,-1139.18081981,0.001108,17,
+tau78,CONVERGED,sto_bi_tau78.vertical_relax_8h.out,-1139.18885779,0.001389,18,
+tau79,CONVERGED,sto_bi_tau79.vertical_relax_8h.out,-1139.19946981,0.00077,18,
+tau80,CONVERGED,sto_bi_tau80.vertical_relax_8h.out,-1139.23240925,0.001479,16,
+tau81,CONVERGED,sto_bi_tau81.vertical_relax_8h.out,-1139.22290998,0.002025,16,
+tau82,CONVERGED,sto_bi_tau82.vertical_relax_8h.out,-1139.20337973,0.001219,15,
+tau83,CONVERGED,sto_bi_tau83.vertical_relax_8h.out,-1139.18886034,0.001372,18,
+tau84,CONVERGED,sto_bi_tau84.vertical_relax_restart1.out,-1139.18195833,0.00106,5,sto_bi_tau84.vertical_relax_8h.out
+tau85,CONVERGED,sto_bi_tau85.vertical_relax_restart1.out,-1139.18001132,0.001092,20,sto_bi_tau85.vertical_relax_8h.out
+tau86,CONVERGED,sto_bi_tau86.vertical_relax_restart1.out,-1139.18197894,0.001202,3,sto_bi_tau86.vertical_relax_8h.out
+tau87,CONVERGED,sto_bi_tau87.vertical_relax_8h.out,-1139.18885725,0.001363,18,
+tau88,CONVERGED,sto_bi_tau88.vertical_relax_8h.out,-1139.20337457,0.001219,15,
+tau89,CONVERGED,sto_bi_tau89.vertical_relax_8h.out,-1139.22290546,0.002035,16,
+tau90,CONVERGED,sto_bi_tau90.vertical_relax_8h.out,-1139.26675999,0.001131,12,
+tau91,CONVERGED,sto_bi_tau91.vertical_relax_8h.out,-1139.25294718,0.001577,12,
+tau92,CONVERGED,sto_bi_tau92.vertical_relax_8h.out,-1139.22291162,0.001907,16,
+tau93,CONVERGED,sto_bi_tau93.vertical_relax_8h.out,-1139.19947303,0.00071,18,
+tau94,CONVERGED,sto_bi_tau94.vertical_relax_8h.out,-1139.18857019,0.001074,18,
+tau95,CONVERGED,sto_bi_tau95.vertical_relax_8h.out,-1139.18561971,0.001033,18,
+tau96,CONVERGED,sto_bi_tau96.vertical_relax_8h.out,-1139.18856811,0.001047,18,
+tau97,CONVERGED,sto_bi_tau97.vertical_relax_8h.out,-1139.19946792,0.000708,18,
+tau98,CONVERGED,sto_bi_tau98.vertical_relax_8h.out,-1139.22290414,0.001939,16,
+tau99,CONVERGED,sto_bi_tau99.vertical_relax_8h.out,-1139.25294283,0.001553,12,

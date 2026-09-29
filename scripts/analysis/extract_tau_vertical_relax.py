@@ -3,6 +3,7 @@
 from pathlib import Path
 import argparse
 import csv
+import hashlib
 import json
 import re
 
@@ -14,6 +15,19 @@ from ase.io.trajectory import Trajectory
 RY_TO_EV = 13.605693122994
 BOHR_TO_ANG = 0.529177210903
 RY_BOHR_TO_EV_ANG = RY_TO_EV / BOHR_TO_ANG
+
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def normalize_text_lines(path):
+    path = Path(path)
+    path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
 
 
 def read_text(path):
@@ -154,6 +168,18 @@ def extract_one(output, outdir, tau_label=None):
         )
 
     label = tau_label or output.parent.name
+
+    for frame in unique_frames:
+        frame.info.update(
+            {
+                "tau": label,
+                "tau_p": int(label[3]),
+                "tau_q": int(label[4]),
+                "stage": "B",
+                "constraint": "xy_fixed_z_free",
+                "force_label": "raw_dft",
+            }
+        )
 
     # --------------------------------------------------------
     # EXTXYZ
@@ -315,6 +341,7 @@ def extract_one(output, outdir, tau_label=None):
         writer = csv.DictWriter(
             fh,
             fieldnames=step_fields,
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(step_rows)
@@ -342,6 +369,7 @@ def extract_one(output, outdir, tau_label=None):
         writer = csv.DictWriter(
             fh,
             fieldnames=atomic_fields,
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(atomic_rows)
@@ -359,14 +387,22 @@ def extract_one(output, outdir, tau_label=None):
         direct=False,
         sort=False,
     )
+    normalize_text_lines(final_vasp)
 
     # --------------------------------------------------------
     # Manifest / provenance
     # --------------------------------------------------------
 
     manifest = {
+        "schema_version": 1,
         "tau": label,
-        "source_output": str(output),
+        "stage": "B",
+        "calculation": "vertical_relaxation",
+        "constraint": "xy_fixed_z_free",
+        "force_label": "raw_dft",
+        "source_output": output.name,
+        "source_relative_path": f"{label}/{output.name}",
+        "source_sha256": sha256(output),
         "ase_frames_parsed": len(frames),
         "unique_frames_written": n_frames,
         "qe_energy_count": n_qe_energy,

@@ -142,8 +142,8 @@ def main():
             "selection_reason":
                 (
                     "Highest-ranked scientifically valid "
-                    "branch: converged BFGS preferred; "
-                    "then completed execution; then more "
+                    "branch: converged BFGS with normal "
+                    "Quantum ESPRESSO termination required; then more "
                     "evaluated frames; then lower final "
                     "QE total force."
                 ),
@@ -189,6 +189,7 @@ def main():
         w = csv.DictWriter(
             fh,
             fieldnames=fields,
+            lineterminator="\n",
         )
         w.writeheader()
         w.writerows(rows)

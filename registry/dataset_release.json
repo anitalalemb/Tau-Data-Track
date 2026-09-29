@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "STO_tau_10x10",
+  "counts": {
+    "A": 0,
+    "B": 100,
+    "C": 1
+  },
+  "labels": "DFT energy and raw Cartesian forces; stress where available",
+  "warning": "Projected Stage-C forces are diagnostics, not ML labels."
+}

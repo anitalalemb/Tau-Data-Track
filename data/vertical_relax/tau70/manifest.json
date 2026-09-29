@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "tau": "tau70",
+  "stage": "B",
+  "calculation": "vertical_relaxation",
+  "constraint": "xy_fixed_z_free",
+  "force_label": "raw_dft",
+  "source_output": "sto_bi_tau70.vertical_relax_8h.out",
+  "source_relative_path": "tau70/sto_bi_tau70.vertical_relax_8h.out",
+  "source_sha256": "866c5f0f56626a5e99bb93df2dd12ab42003eb94a0cf71b9ec2b1fe92678d594",
+  "ase_frames_parsed": 17,
+  "unique_frames_written": 17,
+  "qe_energy_count": 17,
+  "qe_total_force_count": 17,
+  "alignment_ok": true,
+  "scf_convergence_messages": 17,
+  "bfgs_converged": true,
+  "end_bfgs": true,
+  "job_done": true,
+  "maximum_cpu_time_exceeded": false,
+  "final_energy_Ry": -1139.20481651,
+  "final_qe_total_force_Ry_Bohr": 0.001181,
+  "files": {
+    "trajectory_extxyz": "trajectory.extxyz",
+    "trajectory_traj": "trajectory.traj",
+    "steps_csv": "steps.csv",
+    "atomic_forces_csv": "atomic_forces.csv",
+    "final_structure_vasp": "final_structure.vasp"
+  },
+  "branch_selection": {
+    "selected": "sto_bi_tau70.vertical_relax_8h.out",
+    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS with normal Quantum ESPRESSO termination required; then more evaluated frames; then lower final QE total force.",
+    "alternatives": []
+  }
+}

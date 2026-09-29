@@ -1,6 +1,13 @@
 {
+  "schema_version": 1,
   "tau": "tau00",
-  "source_output": "/pscratch/sd/a/anita14b/SAM/STO/bilayer/twist/grid/10x10/tau00/sto_bi_tau00.vertical_relax.out",
+  "stage": "B",
+  "calculation": "vertical_relaxation",
+  "constraint": "xy_fixed_z_free",
+  "force_label": "raw_dft",
+  "source_output": "sto_bi_tau00.vertical_relax.out",
+  "source_relative_path": "tau00/sto_bi_tau00.vertical_relax.out",
+  "source_sha256": "aeb4686de78d57802d3247c409f13cca91a68b06fc75d1835ad4d8c7d4422587",
   "ase_frames_parsed": 1,
   "unique_frames_written": 1,
   "qe_energy_count": 1,
@@ -22,7 +29,7 @@
   },
   "branch_selection": {
     "selected": "sto_bi_tau00.vertical_relax.out",
-    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS preferred; then completed execution; then more evaluated frames; then lower final QE total force.",
+    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS with normal Quantum ESPRESSO termination required; then more evaluated frames; then lower final QE total force.",
     "alternatives": [
       {
         "file": "sto_bi_tau00.vertical_relax_8h.out",

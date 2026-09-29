@@ -1,101 +1,96 @@
 # Tau-Data-Track
 
-Data-processing and provenance repository for the 10x10 stacking-displacement
-(tau) grid of SrTiO3 bilayers.
+Reproducible data and provenance for the 10 × 10 stacking-displacement (tau)
+grid of SrTiO3 bilayers.
 
-## Purpose
+## What this repository tracks
 
-The repository tracks the workflow used to generate, relax, validate, and
-extract stacking-dependent SrTiO3 bilayer data.
+The scientific dataset is organized by calculation stage:
 
-Large raw Quantum ESPRESSO calculation directories remain on NERSC scratch.
-This repository stores the reproducible workflow scripts and compact scientific
-datasets derived from validated DFT calculations.
+- **Stage A — rigid SCF:** one imposed-registry structure per tau point;
+- **Stage B — vertical relaxation:** x/y fixed and z relaxed;
+- **Stage C — fixed-registry FIRE:** internal atomic x/y and z motion, while
+  the equal-weight x/y centroid of each layer remains fixed.
 
-## Vertical pre-relaxation dataset
+Every ML-ready configuration retains its total energy, raw Cartesian DFT
+forces, atomic coordinates, constraint metadata, and source provenance.
+Stress is retained when it exists in the archived source. The current Stage C
+ASE checkpoints omit stress, so those fields are explicitly unavailable rather
+than filled with zeros. Stage C projected forces are stored only as convergence
+diagnostics and must not be used as training labels.
 
-The current dataset corresponds to Stage B: vertical pre-relaxation.
+## Git versus NAS
 
-For these calculations:
+This repository contains compact, reviewable products:
 
-- the in-plane atomic coordinates are fixed;
-- atomic z coordinates are allowed to relax;
-- the calculation uses Quantum ESPRESSO structural relaxation;
-- energies, atomic forces, stress, and ionic configurations are retained.
+- EXTXYZ and ASE trajectories;
+- per-step and per-atom CSV files;
+- final structures;
+- status summaries, manifests, and SHA-256 checksums;
+- generation, extraction, validation, and archival scripts.
 
-For every validated tau point, the extracted dataset contains:
+Large raw Quantum ESPRESSO outputs and restart state belong on the NAS. NERSC
+scratch is an active workspace and is not the permanent archive.
 
-- `trajectory.extxyz` — complete evaluated ionic trajectory with ASE calculator data;
-- `trajectory.traj` — ASE trajectory;
-- `steps.csv` — frame-level energies, forces, stress, and displacements;
-- `atomic_forces.csv` — coordinates and Cartesian force components for every atom and frame;
-- `final_structure.vasp` — final relaxed structure;
-- `manifest.json` — source calculation, convergence information, and branch provenance.
-
-The global status table is:
-
-`summaries/vertical_relax_summary.csv`
-
-## Branch provenance
-
-Some tau points were calculated in more than one independent run.
-
-The analysis workflow does not automatically treat the newest output as
-authoritative. Candidate branches are inspected for BFGS convergence,
-successful termination, number of evaluated configurations, and final
-Quantum ESPRESSO total force.
-
-The selected source and rejected alternatives are recorded in each
-`manifest.json`.
-
-This is particularly important for calculations where a later short rerun
-terminated at its time limit while an earlier calculation had already
-converged.
+See [docs/DATA_AND_NAS_LAYOUT.md](docs/DATA_AND_NAS_LAYOUT.md) for the
+canonical layout, retention rules, and dry-run-first NAS synchronization.
 
 ## Repository structure
 
 ```text
 Tau-Data-Track/
 ├── data/
-│   └── vertical_relax/
+│   ├── stage_a_rigid/
+│   ├── vertical_relax/
+│   └── stage_c_fixed_registry/
+├── registry/
+│   ├── dataset_index.csv
+│   ├── dataset_release.json
+│   └── checksums.sha256
 ├── scripts/
 │   ├── analysis/
+│   ├── archive/
 │   ├── generation/
 │   └── slurm/
 ├── summaries/
-├── requirements.txt
-└── README.md
+├── templates/
+└── workflow/
+```
 
-> ## Analysis environment
->
-> The initial validated extraction was performed with:
->
-> - Python 3.13
-> - ASE 3.29.0
-> - NumPy 2.x
->
-> Install the required Python packages with:
->
-> ```bash
-> python -m pip install -r requirements.txt
-> ```
->
-> ## Current validated dataset
->
-> The first validated dataset contains tau00 through tau15.
->
-> All 16 selected calculations passed:
->
-> - ASE/QE frame alignment;
-> - BFGS convergence;
-> - end-of-optimization detection;
-> - successful QE termination;
-> - coordinate extraction;
-> - energy extraction;
-> - per-atom force extraction;
-> - QE total-force extraction;
-> - stress extraction;
-> - branch-provenance validation.
->
-> The remaining tau points can be added using the same extraction and validation
-> workflow as their Stage-B calculations complete.
+## Extraction commands
+
+From the repository root, with ASE 3.29.0 and NumPy installed:
+
+```bash
+python scripts/analysis/extract_stage_a.py /path/to/10x10
+
+python scripts/analysis/build_tau_vertical_dataset.py \
+  /path/to/10x10 --start 0 --end 99
+
+python scripts/analysis/extract_stage_c.py /path/to/10x10
+
+python scripts/analysis/build_dataset_index.py
+```
+
+The Stage B selector inspects all `vertical_relax*.out` branches, including
+restart and tight branches. A later filename is never accepted merely because
+it is newer.
+
+## Validation rules
+
+- Stage A requires electronic convergence and `JOB DONE`.
+- Stage B requires BFGS convergence, final-coordinate completion, and aligned
+  QE/ASE energy-force frames.
+- Stage C requires `status.json`, matching checkpoint/validation counts, and
+  independent reproduction of every raw-force maximum.
+- Manifests record source branch and hashes.
+- `registry/checksums.sha256` protects compact Git-tracked data.
+
+## Current scope
+
+This release contains validated Stage B products for all 100 tau points and the
+complete 35-frame Stage C trajectory available locally for tau37. The
+downloaded audit archive contains Stage A inputs but no Stage A SCF outputs, so
+the Stage A summary records all 100 points as missing. Likewise, Stage C jobs
+completed later on NERSC are not included until their files are archived and
+extracted. Missing data are recorded as missing rather than inferred.

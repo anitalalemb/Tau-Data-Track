@@ -1,0 +1,27 @@
+project: STO_tau_10x10
+
+local:
+  calculation_root: /pscratch/sd/a/USER/PROJECT/STO/bilayer/twist/grid/10x10
+
+nas:
+  # Mounted filesystem example: /mnt/lab-nas/projects
+  # Remote rsync example: user@nas.example.edu:/data/projects
+  destination_root: /path/to/NAS/projects
+
+retention:
+  git:
+    - compact_extxyz
+    - csv_summaries
+    - manifests
+    - checksums
+    - workflow_scripts
+  nas:
+    - qe_inputs
+    - qe_outputs
+    - slurm_logs
+    - stage_c_checkpoints
+    - pseudopotential_hashes
+  optional_large_restart_archive:
+    - qe_save_directories
+    - charge_density
+    - wavefunctions

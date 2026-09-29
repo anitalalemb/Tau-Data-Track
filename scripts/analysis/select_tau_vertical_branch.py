@@ -34,7 +34,9 @@ def inspect(path):
     job_done = "job done." in low
     max_time = "maximum cpu time exceeded" in low
 
-    converged = bfgs and end_bfgs
+    # A branch is authoritative only when the optimizer reported convergence,
+    # the final BFGS block closed, and Quantum ESPRESSO terminated normally.
+    converged = bfgs and end_bfgs and job_done
 
     return {
         "path": path,
@@ -53,10 +55,11 @@ def choose(tau_dir):
     tau_dir = Path(tau_dir)
     label = tau_dir.name
 
-    candidates = [
-        tau_dir / f"sto_bi_{label}.vertical_relax.out",
-        tau_dir / f"sto_bi_{label}.vertical_relax_8h.out",
-    ]
+    # Include every historical branch.  Restrict the glob to the label so a
+    # copied output from another tau point cannot be selected accidentally.
+    candidates = sorted(
+        tau_dir.glob(f"sto_bi_{label}.vertical_relax*.out")
+    )
 
     runs = [
         r for r in (inspect(p) for p in candidates)
@@ -69,9 +72,10 @@ def choose(tau_dir):
     # Scientific priority:
     # 1. completed/converged BFGS
     # 2. JOB DONE
-    # 3. not max-time terminated
-    # 4. more evaluated ionic configurations
-    # 5. lower final QE total force
+    # 3. normal program termination
+    # 4. not max-time terminated
+    # 5. more evaluated ionic configurations
+    # 6. lower final QE total force
     def score(r):
         force_score = (
             -r["final_force"]

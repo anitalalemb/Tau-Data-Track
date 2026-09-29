@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "tau": "tau55",
+  "stage": "B",
+  "calculation": "vertical_relaxation",
+  "constraint": "xy_fixed_z_free",
+  "force_label": "raw_dft",
+  "source_output": "sto_bi_tau55.vertical_relax_restart3.out",
+  "source_relative_path": "tau55/sto_bi_tau55.vertical_relax_restart3.out",
+  "source_sha256": "9dff16c0371c53d785f932ed7509e9610b5463abb086a40d937bb295257e2ee7",
+  "ase_frames_parsed": 23,
+  "unique_frames_written": 23,
+  "qe_energy_count": 23,
+  "qe_total_force_count": 23,
+  "alignment_ok": true,
+  "scf_convergence_messages": 23,
+  "bfgs_converged": true,
+  "end_bfgs": true,
+  "job_done": true,
+  "maximum_cpu_time_exceeded": false,
+  "final_energy_Ry": -1139.17248801,
+  "final_qe_total_force_Ry_Bohr": 0.001356,
+  "files": {
+    "trajectory_extxyz": "trajectory.extxyz",
+    "trajectory_traj": "trajectory.traj",
+    "steps_csv": "steps.csv",
+    "atomic_forces_csv": "atomic_forces.csv",
+    "final_structure_vasp": "final_structure.vasp"
+  },
+  "branch_selection": {
+    "selected": "sto_bi_tau55.vertical_relax_restart3.out",
+    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS with normal Quantum ESPRESSO termination required; then more evaluated frames; then lower final QE total force.",
+    "alternatives": [
+      {
+        "file": "sto_bi_tau55.vertical_relax_8h.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": false,
+        "frames": 1,
+        "final_total_force_Ry_Bohr": 0.433921,
+        "selection": "rejected_alternative"
+      },
+      {
+        "file": "sto_bi_tau55.vertical_relax_restart1.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": false,
+        "frames": 2,
+        "final_total_force_Ry_Bohr": 0.306327,
+        "selection": "rejected_alternative"
+      },
+      {
+        "file": "sto_bi_tau55.vertical_relax_restart2.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": false,
+        "frames": 0,
+        "final_total_force_Ry_Bohr": null,
+        "selection": "rejected_alternative"
+      },
+      {
+        "file": "sto_bi_tau55.vertical_relax_tight.out",
+        "converged": true,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": false,
+        "frames": 1,
+        "final_total_force_Ry_Bohr": 0.001349,
+        "selection": "rejected_alternative"
+      }
+    ]
+  }
+}

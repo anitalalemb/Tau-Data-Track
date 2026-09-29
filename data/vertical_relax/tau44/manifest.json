@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "tau": "tau44",
+  "stage": "B",
+  "calculation": "vertical_relaxation",
+  "constraint": "xy_fixed_z_free",
+  "force_label": "raw_dft",
+  "source_output": "sto_bi_tau44.vertical_relax_restart3.out",
+  "source_relative_path": "tau44/sto_bi_tau44.vertical_relax_restart3.out",
+  "source_sha256": "b0bd0db3597f47e47a019c0d5e305f60e7035941b84023a19ee20a8dbe08f976",
+  "ase_frames_parsed": 6,
+  "unique_frames_written": 6,
+  "qe_energy_count": 6,
+  "qe_total_force_count": 6,
+  "alignment_ok": true,
+  "scf_convergence_messages": 6,
+  "bfgs_converged": true,
+  "end_bfgs": true,
+  "job_done": true,
+  "maximum_cpu_time_exceeded": false,
+  "final_energy_Ry": -1139.17373988,
+  "final_qe_total_force_Ry_Bohr": 0.001715,
+  "files": {
+    "trajectory_extxyz": "trajectory.extxyz",
+    "trajectory_traj": "trajectory.traj",
+    "steps_csv": "steps.csv",
+    "atomic_forces_csv": "atomic_forces.csv",
+    "final_structure_vasp": "final_structure.vasp"
+  },
+  "branch_selection": {
+    "selected": "sto_bi_tau44.vertical_relax_restart3.out",
+    "selection_reason": "Highest-ranked scientifically valid branch: converged BFGS with normal Quantum ESPRESSO termination required; then more evaluated frames; then lower final QE total force.",
+    "alternatives": [
+      {
+        "file": "sto_bi_tau44.vertical_relax_8h.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": false,
+        "frames": 1,
+        "final_total_force_Ry_Bohr": 0.358954,
+        "selection": "rejected_alternative"
+      },
+      {
+        "file": "sto_bi_tau44.vertical_relax_restart1.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": true,
+        "frames": 12,
+        "final_total_force_Ry_Bohr": 0.03359,
+        "selection": "rejected_alternative"
+      },
+      {
+        "file": "sto_bi_tau44.vertical_relax_restart2.out",
+        "converged": false,
+        "job_done": true,
+        "maximum_cpu_time_exceeded": true,
+        "frames": 19,
+        "final_total_force_Ry_Bohr": 0.006536,
+        "selection": "rejected_alternative"
+      }
+    ]
+  }
+}

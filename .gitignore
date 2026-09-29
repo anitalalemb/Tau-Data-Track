@@ -15,6 +15,13 @@ tmp_*/
 *.wfc*
 wfc*.hdf5
 charge-density*.hdf5
+*.out
+*.tar
+*.tar.gz
+
+# Site-specific storage configuration
+storage_config.yaml
+nas_sync.log
 
 # Slurm runtime logs
 slurm-*.out
