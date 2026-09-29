@@ -34,6 +34,8 @@ scratch is an active workspace and is not the permanent archive.
 
 See [docs/DATA_AND_NAS_LAYOUT.md](docs/DATA_AND_NAS_LAYOUT.md) for the
 canonical layout, retention rules, and dry-run-first NAS synchronization.
+For bulk, monolayer, bilayer, commensurate-angle, bands, PDOS, Wannier, and
+structural-analysis records, see [docs/STO_RESEARCH_CATALOG.md](docs/STO_RESEARCH_CATALOG.md).
 
 ## Repository structure
 
