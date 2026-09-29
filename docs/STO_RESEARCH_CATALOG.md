@@ -42,6 +42,13 @@ angle and the commensuration integers. Keep SCF, relax, bands, PDOS, Wannier,
 and structural-analysis products underneath the same angle directory so they
 cannot be confused with another moiré cell.
 
+The authoritative currently finished set is listed in
+`registry/commensurate_angle_selection.csv`: 53.13°, 36.87°, 28.07°, and
+22.62°. These folders are already present inside the NAS tau-grid raw release.
+The table also marks 18.92°, 16.26°, 14.25°, 12.68°, 11.42°, and 9.53° as
+reference-only or not-valid, so they cannot be accidentally used as completed
+relaxed calculations.
+
 ## Audit before selection
 
 Copy an additional calculation family from NERSC with:

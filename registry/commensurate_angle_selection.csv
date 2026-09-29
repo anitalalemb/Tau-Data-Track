@@ -1,0 +1,11 @@
+angle_deg,m,n,atoms,archive_relative_directory,verified_scf_output,verified_relax_output,status,selection_note
+53.13,2,1,50,commensurate/calc/twisted_sto_angles/theta_53p13_m2_n1_clean,scf_theta53_final_nbnd240.out,relax_theta_53p13_m2_n1.CO.out,USABLE,"Use CO.out; CO1 and CO2 are not the clean relaxed result."
+36.87,3,1,100,commensurate/calc/twisted_sto_angles/theta_36p87_m3_n1_clean,new_Calculations/relaxation/final_fixed_scf_from_smearing_relaxed_2D/scf_theta36_final_fixed_2D.out,new_Calculations/relaxation/relax_fixed_david_plain_smearing_restart.out,USABLE,"Use the new_Calculations/relaxation branch, not root-level theta36 files."
+28.07,4,1,170,commensurate/calc/twisted_sto_angles/theta_28p07_m4_n1_clean,scf_theta28_final_nbnd820.out,relax_theta28_clean_qe75.out,USABLE,"Finished reference set."
+22.62,5,1,260,commensurate/calc/twisted_sto_angles/theta_22p62_m5_n1_clean,theta_22p62_m5_n1_final.out,relax_from_converged_plain_smearing_restart9_48h.out,USABLE,"Finished reference set."
+18.92,6,1,370,commensurate/calc/twisted_sto_angles/theta_18p92_m6_n1_clean,scf_theta18_b0005_smearing_plain_2node_new.out,relax_theta18_continue_r7_qe75.out,REFERENCE_SCF_ONLY,"No final SCF on converged relaxed geometry; exclude from finished structural/electronic set."
+16.26,7,1,500,commensurate/calc/twisted_sto_angles/theta_16p26_m7_n1_clean,scf_theta16m7_qe75_density_start.out,relax_theta16m7_from_converged_qe75_r6.out,REFERENCE_SCF_ONLY,"Relaxation remains unconverged."
+14.25,8,1,650,commensurate/calc/twisted_sto_angles/theta_14p25_m8_n1_clean,scf_theta14_clean_qe75_nbnd3120_r3.out,relax_theta14_from_converged_scf_r1.out,REFERENCE_SCF_ONLY,"Relaxation remains unconverged."
+12.68,9,1,820,commensurate/calc/twisted_sto_angles/theta_12p68_m9_n1_clean,scf_theta12_clean_r2.out,,NOT_VALID,"No valid final SCF or relaxation."
+11.42,10,1,1010,commensurate/calc/twisted_sto_angles/theta_11p42_m10_n1_clean,scf_theta11_clean_r2.out,,NOT_VALID,"No valid final SCF or relaxation."
+9.53,12,1,1450,commensurate/calc/twisted_sto_angles/theta_09p53_m12_n1_clean,scf_theta09_stable_localTF_b001.out,,NOT_VALID,"No valid final SCF or relaxation."
