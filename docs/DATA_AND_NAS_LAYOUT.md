@@ -71,6 +71,19 @@ The `registry/dataset_index.csv` file is the join table for later ML ingestion. 
 
 ## NAS synchronization
 
+For Anita's mounted Synology share, transfer directly from NERSC through the
+Mac. The script defaults to a dry run and prompts for the NERSC Password + OTP:
+
+```bash
+scripts/archive/copy_nersc_to_mounted_nas.sh --dry-run
+scripts/archive/copy_nersc_to_mounted_nas.sh --apply
+```
+
+The fixed destination is
+`/Volumes/Shared/Anita/STO/tau-grid/raw/2026-09-29_stageABC_v1/`.
+
+For another NAS or source location, use the general workflow below.
+
 First create and review a dry run:
 
 ```bash
