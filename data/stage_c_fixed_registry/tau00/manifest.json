@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "tau": "tau00",
+  "stage": "C",
+  "calculation": "fixed_registry_fire",
+  "converged": true,
+  "fire_steps": 11,
+  "evaluated_frames": 12,
+  "force_label": "raw_dft",
+  "convergence_force": "projected",
+  "final_raw_fmax_eV_A": 0.00915575459508414,
+  "final_projected_fmax_eV_A": 0.009154046600698462,
+  "stress_available": false,
+  "stress_note": "Stored ASE checkpoints do not contain stress; recover it from raw QE outputs when archived.",
+  "fmax_target_eV_A": 0.01,
+  "constraint": {
+    "name": "fixed_layer_xy_centroids",
+    "frame_convention": "equal_weight_all_atoms",
+    "bottom_zero_based": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "top_zero_based": [
+      1,
+      3,
+      5,
+      7,
+      9
+    ]
+  },
+  "source": {
+    "run_directory_name": "stage_c_batch12_attempt01",
+    "provenance": {
+      "ase": "3.29.0",
+      "pseudo_sha256": {
+        "Sr": "4f88aae73996983d9df8f5e61d8935fce7b0e570a26b89723ac4878fdc7b7a02",
+        "Ti": "6f97c81d27b063715dac8214c3d983608c1cc1a2d7f9a4b00eea25c67d1ffd7e",
+        "O": "6d4f573d1f5d8fab1d334ed76fefbac21fdbb2c406af7f85ab8c6aab0e84ccc0"
+      },
+      "rigid_sha256": "60c4f5ed8c84bdd95fb418755a80c09a69d38f8d322696ac8729793f2415d61e",
+      "z_output_sha256": "c6942cbfb8f6375bc1a6b1f199f6bb87df15c815c994438eddee4085eb2e57f6",
+      "seed_outdir": "/pscratch/sd/a/anita14b/SAM/STO/bilayer/twist/grid/10x10/tau00/tmp_vertical_relax",
+      "stage_b_max_xy_change_A": 0.0
+    }
+  }
+}

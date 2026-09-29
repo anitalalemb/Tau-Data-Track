@@ -1,5 +1,5 @@
 tau,status,run,steps,final_energy_eV,final_raw_fmax_eV_A,final_projected_fmax_eV_A
-tau00,MISSING,,,,,
+tau00,CONVERGED,stage_c_batch12_attempt01,11,-15500.72335825997,0.00915575459508414,0.009154046600698462
 tau01,MISSING,,,,,
 tau02,MISSING,,,,,
 tau03,MISSING,,,,,
@@ -24,7 +24,7 @@ tau21,MISSING,,,,,
 tau22,MISSING,,,,,
 tau23,MISSING,,,,,
 tau24,MISSING,,,,,
-tau25,MISSING,,,,,
+tau25,CONVERGED,stage_c_batch12_attempt01,30,-15499.336188850504,0.046236679726895415,0.009968065436539456
 tau26,MISSING,,,,,
 tau27,MISSING,,,,,
 tau28,MISSING,,,,,
@@ -54,7 +54,7 @@ tau51,MISSING,,,,,
 tau52,MISSING,,,,,
 tau53,MISSING,,,,,
 tau54,MISSING,,,,,
-tau55,MISSING,,,,,
+tau55,CONVERGED,stage_c_batch12_attempt01,6,-15499.229970302042,0.008701214900505377,0.008701182795636152
 tau56,MISSING,,,,,
 tau57,MISSING,,,,,
 tau58,MISSING,,,,,

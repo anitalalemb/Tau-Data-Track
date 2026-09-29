@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tau": "tau49",
+  "stage": "A",
+  "calculation": "rigid_scf",
+  "source_output": "sto_bi_tau49.scf.out",
+  "source_sha256": "fba7067b171d2e279c1a5e62a711a252e59d5f54479f94b452932ed279bd9aa6",
+  "job_done": true,
+  "electronic_converged": true,
+  "frames_parsed": 1,
+  "selected_frame": 0,
+  "energy_eV": -15497.55496241153,
+  "max_atomic_force_eV_A": 4.574381607748217,
+  "stress_voigt_eV_A3": [
+    0.019867094477685737,
+    0.00529226049400964,
+    -0.029134059287893803,
+    -0.0005729303518844579,
+    0.012002156345887232,
+    -0.0009521294469618315
+  ],
+  "force_label": "raw_dft"
+}
