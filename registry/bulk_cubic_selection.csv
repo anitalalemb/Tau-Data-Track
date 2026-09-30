@@ -1,0 +1,7 @@
+record_id,calculation,source_path,status,ml_eligible,parent_record,energy_ry,total_force_ry_bohr,pressure_kbar,lattice_a_ang,notes
+sto_bulk_cubic_vcrelax,vc-relax,optimization/input/lat_opt.out,VALID,true,,-569.6688337221,0.000000,0.26,3.94094776,"BFGS converged in 3 SCF cycles and 2 BFGS steps; final volume 61.20713 Ang^3; JOB DONE"
+sto_bulk_cubic_final_scf,scf_final_snapshot,optimization/input/lat_opt.out,VALID,true,sto_bulk_cubic_vcrelax,-569.66894087,0.000000,0.54,3.94094776,"Final SCF embedded in the vc-relax output; electronic convergence in 41 iterations; JOB DONE"
+sto_bulk_cubic_opt_scf_file,scf,optimization/scf/scf_bulk1.out,INVALID_EMPTY,false,sto_bulk_cubic_vcrelax,,,,,"Output is zero bytes; input retained as provenance"
+sto_bulk_cubic_reference_scf_file,scf,scf/scf_bulk1.out,INVALID_EMPTY,false,,,,,,"Output is zero bytes; reference input exists under input/scf_bulk1.in"
+sto_bulk_cubic_band_path,bands,nscf/nscf_bulk1.out,REVIEW_REQUIRED,false,sto_bulk_cubic_reference_scf_file,,,,3.90500000,"PWSCF band-path run has JOB DONE and 120 bands over 81 k points, but archived parent SCF output is empty and bands.x output/data are absent"
+sto_bulk_cubic_pdos,projwfc,pdos/projwfc_bulk2.out,FAILED,false,sto_bulk_cubic_band_path,,,,,"Fatal read_xml_file error: ../nscf/sto_bulk1.save/data-file-schema.xml was not found; no PDOS is scientifically usable"

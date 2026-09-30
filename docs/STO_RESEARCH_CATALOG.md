@@ -76,3 +76,27 @@ The inventory marks SCF and relax calculations as `VALID` only when their
 completion markers support that decision. Bands, PDOS, and Wannier results are
 marked `REVIEW_REQUIRED`: their parent-SCF linkage and physical settings need
 scientific review before they enter a final dataset or manuscript figure.
+
+## Cubic bulk STO release
+
+The raw release `2026-09-29_bulk_v1` is stored at
+`STO/bulk/raw/2026-09-29_bulk_v1` on the NAS. Its source was
+`/pscratch/sd/a/anita14b/SAM/larson/bulk_2`; the older `bulk_1` directory was
+empty apart from restart-directory scaffolding. The file-level manifest is
+`registry/raw_bulk_2026-09-29_bulk_v1.csv`, and the scientific disposition is
+recorded in `registry/bulk_cubic_selection.csv`.
+
+The valid structural result is the cubic `vc-relax` in
+`optimization/input/lat_opt.out`. It reached a lattice parameter of
+3.94094776 Angstrom, a final volume of 61.20713 Angstrom cubed, and a final
+enthalpy of -569.6688337221 Ry. BFGS converged in three SCF cycles and two BFGS
+steps. The final SCF snapshot embedded in the same output has energy
+-569.66894087 Ry, zero symmetry-enforced total force, and 0.54 kbar pressure.
+
+The standalone SCF outputs in `optimization/scf/` and `scf/` are zero-byte
+files and are invalid. The band-path PWSCF output reached `JOB DONE`, but its
+archived parent SCF output is empty and no `bands.x` output or processed band
+data are present; it therefore remains `REVIEW_REQUIRED`. The PDOS run failed
+because `../nscf/sto_bulk1.save/data-file-schema.xml` was missing. Its `CRASH`
+and error logs are retained only as provenance and must not be used for plots,
+physical conclusions, or machine-learning labels.
