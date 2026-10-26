@@ -97,6 +97,10 @@ that they were never run on NERSC. The tau37 trajectory contains 35 evaluated
 frames.
 
 The 26 October 2026 repository audit checked all 1,024 compact-data checksums
-and reconciled the index with the stage manifests. Live NERSC verification is
-pending authentication. See [the tracking audit](docs/TRACKING_AUDIT_2026-10-26.md)
+and reconciled the index with the stage manifests. The subsequent NERSC
+inventory verified all 200 original A/B source hashes and found eight additional
+Stage C points reporting convergence whose compact products are not yet exported.
+The separate equal/mass families are tracked in
+[dated verification records](registry/nersc_2026-10-26/verification_summary.json).
+See [the tracking audit](docs/TRACKING_AUDIT_2026-10-26.md)
 for confirmed defects, source coverage, and remaining work.

@@ -1,0 +1,50 @@
+{
+  "inventory_sha256": "37c82dfb3031ef26c85d42807523f66a0b06420acd883e4a1cd82fb02350375e",
+  "inventory_host": "login21",
+  "captured_utc": "2026-10-26T18:06:04.621280+00:00",
+  "roots": [
+    "/pscratch/sd/a/anita14b/SAM/STO/bilayer/twist/grid/10x10"
+  ],
+  "files_recorded": 6045,
+  "read_status_counts": {
+    "OK": 6045
+  },
+  "source_hash_counts": {
+    "MATCH": 200
+  },
+  "original_stage_c_remote_converged": 12,
+  "original_stage_c_missing_exports": [
+    "tau11",
+    "tau22",
+    "tau44",
+    "tau50",
+    "tau56",
+    "tau68",
+    "tau73",
+    "tau99"
+  ],
+  "newer_families": {
+    "tau_equal_defined": {
+      "A": 100,
+      "B": 78
+    },
+    "tau_mass_defined": {
+      "A": 100,
+      "B": 77
+    }
+  },
+  "scheduler_account_history_rows": 220,
+  "scheduler_history_rows": 189,
+  "scheduler_history_state_counts": {
+    "COMPLETED": 79,
+    "FAILED": 64,
+    "CANCELLED by 110312": 11,
+    "TIMEOUT": 31,
+    "NODE_FAIL": 4
+  },
+  "limitations": [
+    "Markers do not validate energy/force frame alignment or physical accuracy",
+    "Stage C checkpoint binaries and trajectory contents were not collected",
+    "Only the listed root was scanned; moved or other-cluster runs are outside coverage"
+  ]
+}
