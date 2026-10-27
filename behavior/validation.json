@@ -1,0 +1,8 @@
+{
+  "all_output_hashes_match_nersc_inventory": true,
+  "selected_original_tau_vertical_outputs_checked": 100,
+  "existing_tau_force_energy_records_compared": 1571,
+  "energy_and_force_discrepancies": 0,
+  "regression_tests_passed": 10,
+  "extractor_sha256": "9c5e548e0cbfda24929027928c2272d004280574ad4c4a312dfda21349f4a4c1"
+}

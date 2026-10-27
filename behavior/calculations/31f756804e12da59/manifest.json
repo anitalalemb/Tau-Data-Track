@@ -1,0 +1,31 @@
+{
+  "source_relative_path": "tau_mass_defined/tau09/sto_bi_tau09.vertical_relax_8h.out",
+  "source_sha256": "3ae731a860220a175d820f0d61cdc777c82e0ed64764c204ce8d399f8946ee64",
+  "source_bytes": 971064,
+  "runs": [
+    {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": false,
+      "bfgs_converged": false
+    }
+  ],
+  "source_stable": true,
+  "summary": {
+    "observed_iterations": 707,
+    "scf_cycles": 2,
+    "converged_cycles": 1,
+    "force_evaluations": 1,
+    "optimizer_events": 2,
+    "last_run": {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": false,
+      "bfgs_converged": false
+    }
+  }
+}

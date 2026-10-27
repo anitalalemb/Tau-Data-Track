@@ -1,0 +1,31 @@
+{
+  "source_relative_path": "tau66/sto_bi_tau66.vertical_relax_8h.out",
+  "source_sha256": "b4fe5885425e4483f02266fc527c16fba38b2f7fde4881da9a2b026d97817a26",
+  "source_bytes": 1579607,
+  "runs": [
+    {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": true,
+      "bfgs_converged": false
+    }
+  ],
+  "source_stable": true,
+  "summary": {
+    "observed_iterations": 1127,
+    "scf_cycles": 11,
+    "converged_cycles": 10,
+    "force_evaluations": 10,
+    "optimizer_events": 20,
+    "last_run": {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": true,
+      "bfgs_converged": false
+    }
+  }
+}

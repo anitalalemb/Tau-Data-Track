@@ -23,6 +23,22 @@ def digest(path):
     return h.hexdigest()
 
 
+def is_converged(stage, manifest):
+    """Use the completion evidence appropriate to each calculation stage."""
+    if stage == "A":
+        return (manifest.get("electronic_converged") is True and
+                manifest.get("job_done") is True)
+    if stage == "B":
+        return (manifest.get("bfgs_converged") is True and
+                manifest.get("end_bfgs") is True and
+                manifest.get("job_done") is True and
+                manifest.get("alignment_ok") is True and
+                manifest.get("maximum_cpu_time_exceeded") is not True)
+    if stage == "C":
+        return manifest.get("converged") is True
+    raise ValueError(f"Unknown stage: {stage}")
+
+
 def main():
     rows, checksums = [], []
     for stage, (relative, calculation) in STAGES.items():
@@ -32,10 +48,7 @@ def main():
             if not manifest_path.is_file():
                 continue
             manifest = json.loads(manifest_path.read_text())
-            converged = manifest.get("converged")
-            if converged is None:
-                converged = (manifest.get("bfgs_converged", False) and
-                             manifest.get("job_done", False))
+            converged = is_converged(stage, manifest)
             trajectory = next((name for name in ("trajectory.extxyz", "configuration.extxyz")
                                if (tau_dir / name).is_file()), "")
             rows.append({"dataset_id": f"sto_tau10x10_{stage}_{tau_dir.name}",

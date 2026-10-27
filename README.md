@@ -5,6 +5,12 @@ grid of SrTiO3 bilayers.
 
 ## What this repository tracks
 
+[SCF energy, force and relaxation behavior](behavior/README.md) provides
+per-output plots, exact electronic-iteration CSVs, force evaluations and
+reported optimizer-step histories. Browse by tau point, keeping original,
+equal-weight and mass-weighted calculation branches distinct. Coverage and
+missing raw traces are stated explicitly.
+
 The scientific dataset is organized by calculation stage:
 
 - **Stage A — rigid SCF:** one imposed-registry structure per tau point;
@@ -90,9 +96,17 @@ it is newer.
 
 ## Current scope
 
-This release contains validated Stage B products for all 100 tau points and the
-complete 35-frame Stage C trajectory available locally for tau37. The
-downloaded audit archive contains Stage A inputs but no Stage A SCF outputs, so
-the Stage A summary records all 100 points as missing. Likewise, Stage C jobs
-completed later on NERSC are not included until their files are archived and
-extracted. Missing data are recorded as missing rather than inferred.
+The tracked release contains 100 Stage A datasets, 100 Stage B datasets, and
+four Stage C datasets: tau00, tau25, tau37, and tau55. The Stage C summary
+records the other 96 points as missing from this release; that does not prove
+that they were never run on NERSC. The tau37 trajectory contains 35 evaluated
+frames.
+
+The 26 October 2026 repository audit checked all 1,024 compact-data checksums
+and reconciled the index with the stage manifests. The subsequent NERSC
+inventory verified all 200 original A/B source hashes and found eight additional
+Stage C points reporting convergence whose compact products are not yet exported.
+The separate equal/mass families are tracked in
+[dated verification records](registry/nersc_2026-10-26/verification_summary.json).
+See [the tracking audit](docs/TRACKING_AUDIT_2026-10-26.md)
+for confirmed defects, source coverage, and remaining work.

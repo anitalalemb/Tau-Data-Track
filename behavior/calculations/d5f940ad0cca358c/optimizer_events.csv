@@ -1,0 +1,24 @@
+run_id,source_line,event,value,preceding_force_evaluation
+1,1681,reported_scf_cycles,1,1
+1,1682,reported_bfgs_step,0,1
+1,3766,reported_scf_cycles,2,2
+1,3767,reported_bfgs_step,1,2
+1,5769,reported_scf_cycles,3,3
+1,5770,reported_bfgs_step,2,3
+1,7840,reported_scf_cycles,4,4
+1,7841,reported_bfgs_step,3,4
+1,10064,reported_scf_cycles,5,5
+1,10065,reported_bfgs_step,4,5
+1,12122,reported_scf_cycles,6,6
+1,12123,reported_bfgs_step,5,6
+1,14002,reported_scf_cycles,7,7
+1,14003,reported_bfgs_step,6,7
+1,16092,reported_scf_cycles,8,8
+1,16093,reported_bfgs_step,7,8
+1,18299,reported_scf_cycles,9,9
+1,18300,reported_bfgs_step,8,9
+1,20422,reported_scf_cycles,10,10
+1,20423,reported_bfgs_step,9,10
+1,22522,reported_scf_cycles,11,11
+1,22523,reported_bfgs_step,10,11
+1,24775,bfgs_converged,bfgs converged in  12 scf cycles and  11 bfgs steps,12
