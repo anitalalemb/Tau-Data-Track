@@ -1,0 +1,7 @@
+cycle_id,run_id,source_line,outcome,first_printed_iteration,last_printed_iteration,reported_iterations,outcome_line
+1,1,439,CONVERGED,1,51,51,2343
+2,1,2548,CONVERGED,1,38,38,4191
+3,1,4399,CONVERGED,1,60,60,6418
+4,1,6624,CONVERGED,1,40,40,8300
+5,1,8506,CONVERGED,1,51,51,10369
+6,1,10575,CONVERGED,1,97,97,13217

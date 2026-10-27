@@ -1,0 +1,3 @@
+cycle_id,run_id,source_line,outcome,first_printed_iteration,last_printed_iteration,reported_iterations,outcome_line
+1,1,433,CONVERGED,1,4,4,1555
+2,1,1760,NOT_CONVERGED,1,700,,17557

@@ -1,0 +1,10 @@
+run_id,source_line,event,value,preceding_force_evaluation
+1,2637,reported_scf_cycles,1,1
+1,2638,reported_bfgs_step,0,1
+1,4071,reported_scf_cycles,2,2
+1,4072,reported_bfgs_step,1,2
+1,6189,reported_scf_cycles,3,3
+1,6190,reported_bfgs_step,2,3
+1,8510,reported_scf_cycles,4,4
+1,8511,reported_bfgs_step,3,4
+1,10527,bfgs_converged,bfgs converged in   5 scf cycles and   4 bfgs steps,5

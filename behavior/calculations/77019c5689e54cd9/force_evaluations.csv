@@ -1,0 +1,4 @@
+run_id,cycle_id,force_evaluation,source_line,energy_Ry,energy_line,electronic_outcome,qe_total_force_Ry_Bohr,qe_scf_force_correction_Ry_Bohr,atom_count_expected,atom_count_read,max_printed_atomic_force_eV_A,rms_printed_atomic_force_eV_A,reported_bfgs_step_after,reported_scf_cycles_after,force_correction_warning
+1,1,1,3000,-1139.18197219,2887,CONVERGED,0.001999,0.000287,10,10,0.18245693196629,0.10873080218583836,0,1,True
+1,2,2,4675,-1139.18197578,4562,CONVERGED,0.0016,0.000171,10,10,0.18213763775955444,0.10836306522316115,1,2,True
+1,3,3,6507,-1139.18197894,6394,CONVERGED,0.001202,3.5e-05,10,10,0.1816868649031278,0.10808553849360417,2,3,False

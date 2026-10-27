@@ -5,6 +5,12 @@ grid of SrTiO3 bilayers.
 
 ## What this repository tracks
 
+[SCF energy, force and relaxation behavior](behavior/README.md) provides
+per-output plots, exact electronic-iteration CSVs, force evaluations and
+reported optimizer-step histories. Browse by tau point, keeping original,
+equal-weight and mass-weighted calculation branches distinct. Coverage and
+missing raw traces are stated explicitly.
+
 The scientific dataset is organized by calculation stage:
 
 - **Stage A — rigid SCF:** one imposed-registry structure per tau point;

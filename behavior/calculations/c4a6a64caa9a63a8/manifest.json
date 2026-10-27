@@ -1,0 +1,31 @@
+{
+  "source_relative_path": "tau_mass_defined/tau08/sto_bi_tau08.scf.out",
+  "source_sha256": "63fc6d953c30f1c492b1e85a3c2991843fa5028e3fdbeed305a3f95cebc644f0",
+  "source_bytes": 233055,
+  "runs": [
+    {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": false,
+      "bfgs_converged": false
+    }
+  ],
+  "source_stable": true,
+  "summary": {
+    "observed_iterations": 155,
+    "scf_cycles": 1,
+    "converged_cycles": 1,
+    "force_evaluations": 1,
+    "optimizer_events": 0,
+    "last_run": {
+      "run_id": 1,
+      "source_line": 2,
+      "job_done": true,
+      "error": false,
+      "time_limit": false,
+      "bfgs_converged": false
+    }
+  }
+}
